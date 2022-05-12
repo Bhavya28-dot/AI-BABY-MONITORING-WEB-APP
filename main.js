@@ -32,6 +32,7 @@ function draw() {
             noFill();
             stroke(r, g, b);
             rect(objects[i].x, objects[i].y, objects[i].height, objects[i].width);
+        }
 
             if (objects[i].label = "person") {
                 document.getElementById("status").innerHTML = "Baby is found";
@@ -44,7 +45,7 @@ function draw() {
                 document.getElementById("status").innerHTML = "Baby not found";
                 alert.play();
             }
-        }
+        
     }
 }
 
