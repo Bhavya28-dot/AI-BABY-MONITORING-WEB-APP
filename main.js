@@ -34,7 +34,7 @@ function draw() {
             rect(objects[i].x, objects[i].y, objects[i].height, objects[i].width);
         }
 
-            if (objects[i].label = "person") {
+            if (objects[i].label == "person") {
                 document.getElementById("status").innerHTML = "Baby is found";
                 alert.stop();
             } else {
