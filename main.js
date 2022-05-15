@@ -32,8 +32,6 @@ function draw() {
             noFill();
             stroke(r, g, b);
             rect(objects[i].x, objects[i].y, objects[i].height, objects[i].width);
-        }
-
             if (objects[i].label == "person") {
                 document.getElementById("status").innerHTML = "Baby is found";
                 alert.stop();
@@ -41,14 +39,14 @@ function draw() {
                 document.getElementById("status").innerHTML = "Baby not found";
                 alert.play();
             }
-            if (objects.length = 0) {
+            if (objects.length == 0) {
                 document.getElementById("status").innerHTML = "Baby not found";
                 alert.play();
             }
-        
-    }
+          
+      }  
+    }     
 }
-
 function modelLoaded() {
     console.log("Model is Loaded!");
     status = true;
